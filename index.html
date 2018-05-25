@@ -3,30 +3,33 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="index.css" rel="stylesheet" type="text/css" />
-		<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+    <title>Gingi's Kitchen Trivia</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="jquery.js"></script>
+    <!-- <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script> -->
   </head>
   <body>
-		<div class="container">
-			<header>
-				<h1>Trivia Questions</h1>
-			</header>
-			<div class="main">
-				<h2>
-					Help Gingi choose the right blessing for each food that apears.
-				</h2>
-				<div class="panel">
-				<span id="time">30 sec</span>
+		<header>
+			<h1>Trivia Questions</h1>
+      <div class="cloud1"></div>
+      <div class="cloud3"></div>
+      <div class="cloud2"></div>
+      <div class="cloud4"></div>
+		</header>
+    <h2>Help Gingi choose the right blessing for each food that apears.</h2>
+		<div class="main">
+
+			<div class="panel">
+				<span id="time">Timer</span>
 				<span> | </span>
-				<span id="score">0 points</span>
-				</div>
-				<button id="point">+1 point <button>
+				<span id="score">points</span>
 			</div>
-			<footer>
-				<p>footer</p>
-			</footer>
+      <!-- <div class="cloud"></div> -->
+
+      <div class="ginger"></div>
 		</div>
-    <script src="index.js"></script>
+		</div>
+    <footer></footer>
+    <script src="app.js"></script>
   </body>
 </html>

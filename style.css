@@ -1,0 +1,173 @@
+* {
+	box-sizing: border-box;
+}
+
+*, html, body, header {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Calibri, sans-serif;
+  font-size: 18px;
+
+}
+
+.container {
+/*background: linear-gradient(to bottom right, #55A9FF, #cce5ff);*/
+}
+.cloud{
+  background: url(img/cloud.png) bottom center;
+  display: block;
+  width: 140px;
+  height: 76px;
+  background: url(img/white_cloud.svg);
+  background-size: 140px 76px;
+  /* left: 300; */
+  /* color:black; */
+  position: absolute;
+  right:5%;
+}
+.cloud1{
+  float: left;
+  display: inline-block;
+  width: 140px;
+  height: 76px;
+  background: url(img/white_cloud.svg);
+
+  position: absolute;
+  top: 80px;
+  right: 15%;
+  z-index: -1;
+}
+.cloud2{
+  float: left;
+  display: inline-block;
+  width: 140px;
+  height: 76px;
+  background: url(img/white_cloud.svg);
+
+  position: absolute;
+  top: 80px;
+  left: 15%;
+  z-index: -1;
+}
+
+.cloud3{
+  float: left;
+  background: url(img/cloud.png) bottom center;
+  display: block;
+  width:168px;
+  height: 91px;
+  background: url(img/white_cloud.svg);
+  background-size: 168px 91px;
+  /* left: 300; */
+  /* color:black; */
+  position: absolute;
+  top: 55px;
+  right:60% ;
+  z-index: -2;
+}
+.cloud4{
+  float: left;
+  background: url(img/cloud.png) bottom center;
+  display: block;
+  width:168px;
+  height: 91px;
+  background: url(img/white_cloud.svg);
+  background-size: 168px 91px;
+  /* left: 300; */
+  /* color:black; */
+  position: absolute;
+  top: 85px;
+  left:55% ;
+  z-index: -2;
+}
+header{
+	height: 200px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 60px 0 40px 0;
+	overflow: hidden;
+	min-width: 400px;
+	border-top: 12px solid #2a547f;
+	border-bottom: 20px solid #2a547f;
+}
+
+header h1 {
+	font-family:inherit;
+  color: #2a547f;
+	font-size: 2em;
+	letter-spacing: 10px;
+  z-index: 100;
+  text-shadow: 4px 3px 10px #a8a8a8;
+  text-transform: uppercase;
+}
+h2 {
+  width: 100%;
+  font-size:
+  position:absolute;
+  margin: 0 auto;
+  top: 40px;
+  height: 100px;
+	padding: 30px 10px;
+	text-align: center;
+	color: white;
+	background:#cce5ff;
+	text-shadow: 2px 3px 8px #2a547f;
+  z-index: -3;
+}
+.main{
+  background:#55A9FF;
+  min-height: 700px;
+  border-bottom: 2px #2a547f;
+}
+
+img .ginger{
+  border-radius: 50%;
+  height: 25%;
+  width: 25%;
+  background-image: url("img/gingi-ginger-kid_white.jpg");
+  float: left;
+  display: block;
+
+  background: url(img/white_cloud.svg);
+
+  position: absolute;
+  top: 60px;
+  left: 70%;
+}
+
+.panel{
+  position: relative;
+  top: 40px;
+  border: solid 2px #ffab55;
+  margin: 0 auto;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  color: #ffab55;
+  border-radius: 0px 0px 50px 50px;
+}
+
+.panel span{
+	font-size: 24px;
+}
+
+button {
+  background: #0084ff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 14px;
+  font-size: 15px;
+  color: #fff;
+}
+
+footer {
+	background-color: green;
+	position: fixed;
+	bottom: 0;
+	height: 40px;
+	width: 100%;
+	border-bottom: 5px solid saddlebrown;
+}
