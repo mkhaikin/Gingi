@@ -8,7 +8,7 @@
 }
 
 body {
-	font-family: Calibri, sans-serif;
+	font-family: "Helvetica Neu", Helvetica;
   font-size: 18px;
 
 }
@@ -97,14 +97,15 @@ header{
 header h1 {
 	font-family:inherit;
   color: #2a547f;
-	font-size: 2em;
+	font-size: 50px;
 	letter-spacing: 10px;
   z-index: 100;
   text-shadow: 4px 3px 10px #a8a8a8;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 h2 {
-  width: 100%;
+
   font-size:
   position:absolute;
   margin: 0 auto;
@@ -123,6 +124,10 @@ h2 {
   border-bottom: 2px #2a547f;
 }
 
+.start{
+
+}
+
 img .ginger{
   border-radius: 50%;
   height: 25%;
@@ -139,6 +144,7 @@ img .ginger{
 }
 
 .panel{
+  display: none;
   position: relative;
   top: 40px;
   border: solid 2px #ffab55;
