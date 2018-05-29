@@ -42,7 +42,7 @@ body {
   width: 140px;
   height: 76px;
 	top: 80px;
-  left: 15%;
+  left: 55%;
   z-index: -1;
 }
 .cloud3{
@@ -51,7 +51,7 @@ body {
   height: 91px;
   top: 25px;
   right:70% ;
-  z-index: -2;
+  z-index: -1;
 }
 .cloud4{
   width:168px;
@@ -59,30 +59,28 @@ body {
   background-size: 168px 91px;
   top: 35px;
   left:65% ;
-  z-index: -2;
+  z-index: -1;
 }
 
 .wrap{
-	position: absolute;
+	padding-top: 2%;
 	height: 100%;
 	width: 100%;
 }
 
 header{
 	position: relative;
-	top: 100px;
-	height: 160px;
+	height: auto;
 	text-align: center;
 	margin: 0 auto;
-	padding: 1em 2em 0 2em;
+	padding: 10px 20px;
 	width: 100%;
 	border-top: 12px solid #2a547f;
 	border-bottom: 20px solid #2a547f;
 	background-color: white;
 	z-index: -2;
 }
-header h1 {
-	position: relative;
+#trivia {
 	font-family:inherit;
 	padding: 20px;
   color: #0084ff;
@@ -91,17 +89,14 @@ header h1 {
   text-shadow: 4px 3px 10px #a8a8a8;
   text-transform: uppercase;
 }
-header h2 {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-  margin: 100px auto;
-	min-width: 600px;
-	max-width: 100%;
-	padding: 30px;
+
+#help {
+	font-size: 0.8em;
 	text-align: center;
 	color: white;
 	text-shadow: 2px 3px 8px black;
   z-index: 0;
-	top: 50%;
+	padding: 20px;
 }
 h3{
 	color: white;
@@ -157,7 +152,6 @@ a {
   margin-top: 25px;
   text-align: center;
   z-index: 1;
-
 }
 .user-login-box > *{
   display: inline-block;
@@ -202,17 +196,19 @@ button.submit {
 button.submit:active {
 	background-color: green;
 }
-
 .start{
-  padding: 20px;
-  text-align: center;
-  margin: 0 auto;
-  width: 30%;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  position: relative;
-  top: 50px;
+	margin: 0 auto;
 }
+#start{
+	background: #0084ff;
+	border: none;
+	border-radius: 5px;
+	padding: 12px 14px;
+	font-size: 15px;
+	color: #fff;
+	margin: 0 auto;
+}
+
 label {
   padding-right: 25px;
 }
@@ -268,8 +264,7 @@ footer {
 	height: 6%;
 	width: 100%;
 	border-bottom: 5px solid saddlebrown;
-	z-index: 9;
-
+	z-index: 10;
 }
 
 /* LOADING ... */
@@ -321,7 +316,7 @@ section.loader{
 }
 
 @media only screen and (max-width: 600px) {
-	header h1 {
+	#trivia {
 		position: relative;
 		font-family:inherit;
 		padding: 0px;
