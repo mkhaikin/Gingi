@@ -163,6 +163,7 @@ a {
   position: relative;
   border-radius: 50%;
   background-size: cover;
+	object-fit: cover;
   background-image: url(img/gingi-ginger-kid.jpg);
 	background-position: top;
 	/* background-image: url(https://pbs.twimg.com/profile_images/725321660484583424/ArQ4fM3k.jpg); */
@@ -214,7 +215,7 @@ label {
 }
 
 input[type=text]:hover {
-    background-color: #cce5ff ;
+    background-color: #cce5ff ;``
 }
 img .ginger{
   border-radius: 50%;
