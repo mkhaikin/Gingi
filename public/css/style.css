@@ -2,6 +2,7 @@
     box-sizing:border-box;
     margin: 0;
     padding: 0;
+    /*border: 1px solid black;*/
 }
 
 header nav.navigation {
@@ -13,7 +14,7 @@ header nav.navigation {
   text-align: center;
   width: 100%;
   z-index: 1000;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 ul {
@@ -113,20 +114,19 @@ p {
 .row {
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 .column {
-   width: 400px;
-  margin: 10px;
+  width: 400px;
   text-align: center;
   line-height: 45px;
 }
 
 .column img {
-  width 80%;
+  width: 80%;
 }
 
 .column h3 {
-  
   background-color: rgba(255, 255, 255, 0.6);
   padding: 25%;
 }
@@ -183,7 +183,7 @@ a.more-btn:hover {
 }
 
 .footer {
-  padding-top: 10px;
+  padding-top: 20px;
   text-align: center;
   position: fixed;
   left: 0;
