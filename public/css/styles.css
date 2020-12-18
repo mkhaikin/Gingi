@@ -166,14 +166,26 @@ height: 100px;
 
 /* Media Queries */
 /* mobile hamburger */
-@media screen and (max-width: 660px){
+@media screen and (max-width: 660px)  {
   header.desktop{
   display: none;
   } 
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    header.desktop{
+      display: none;
+    } 
+}
+
 
 }
 
-@media screen and (min-width: 660px){
+@media screen and (min-width: 661px){
   header.mobile{
   display: none;
   } 
