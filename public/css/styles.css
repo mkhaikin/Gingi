@@ -174,12 +174,18 @@ height: 100px;
 
 @media only screen 
   and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
+  and (max-device-width: 600px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
     header.desktop{
       display: none;
     } 
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
 }
 
 
@@ -208,10 +214,5 @@ height: 100px;
     display: block;
   }
 
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
+
 }
