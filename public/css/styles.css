@@ -183,8 +183,6 @@ height: 100px;
 }
 
 
-}
-
 @media screen and (min-width: 661px){
   header.mobile{
   display: none;
