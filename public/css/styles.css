@@ -64,7 +64,7 @@ color:#FCA311;
 
 /* Header Navigation */
 header {
-  padding-top: 40px;
+  padding: 40px 0 20px 0  ;
 }
 header a.icon{
   display: inline-block;
