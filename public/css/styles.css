@@ -64,7 +64,7 @@ color:#FCA311;
 
 /* Header Navigation */
 header {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 header a.icon{
   display: inline-block;
@@ -166,21 +166,20 @@ height: 100px;
 
 /* Media Queries */
 /* mobile hamburger */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 660px){
   header.desktop{
   display: none;
   } 
 
 }
 
-@media screen and (min-width: 601px){
+@media screen and (min-width: 660px){
   header.mobile{
   display: none;
   } 
 
   header.desktop a{
     color: #14213D;
-    display: inline-block;
     font-family: 'Abel', sans-serif;
     font-size: 16px;
     font-weight: 300;
