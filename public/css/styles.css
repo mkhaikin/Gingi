@@ -4,7 +4,6 @@
   padding: 0;
   /*border: 1px solid black;*/
 }
-
 /* GLOBAL */
 body {
 display: flex;
@@ -29,7 +28,6 @@ font-size: 42px;
 font-weight: 300;
 text-align: center;
 }
-
 h3 {
 color: #333;
 font-family: 'Abel', sans-serif;
@@ -38,32 +36,30 @@ text-align: center;
 text-transform: uppercase;
 padding: 5% 0;
 }
-
 h4 {
 color: #FCA311;
 font-family: 'Abel', sans-serif;
 font-size: 24px;
 margin: 0px 0px 50px 0px;
 }
-
 p {
 color: #333;
 font-family: 'Raleway', sans-serif;
 font-size: 16px;
 font-weight: 300;
 }
-
 a {
 text-decoration: none;
 color: #14213D;
 
 /* border: 1px solid white; */
 }
-
 a:hover {
 color:#FCA311;
 }
-
+.wrapper{
+  height: 100%;
+}
 /* Header Navigation */
 header nav.topnav {
 background-color: rgba(255, 255, 255, 0.9);
