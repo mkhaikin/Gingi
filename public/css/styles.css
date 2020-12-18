@@ -6,10 +6,7 @@
 }
 /* GLOBAL */
 body {
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
+  height: 100%;
 }
 
 h1 {
@@ -58,31 +55,69 @@ a:hover {
 color:#FCA311;
 }
 .wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   height: 100%;
-  background-color: aquamarine;
-}
-/* Header Navigation */
-header nav.topnav {
-background-color: rgba(255, 255, 255, 0.9);
-display: block;
-overflow: hidden;
-text-align: center;
-width: 100%;
-z-index: 1000;
-padding: 20px 0;
 }
 
-nav.topnav a{
+/* Header Navigation */
+header {
+  padding-top: 20px;
+}
+header a.icon{
+  display: inline-block;
+  position: relative;;
+  top: -10px;
+  right: 0;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+nav.mobileNav a{
 font-family: 'Abel', sans-serif;
 font-size: 16px;
 font-weight: 300;
 margin: 16px 20px;
 text-transform: uppercase;
 }
-.topnav .icon {
-display: none;
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
 
 /* li {
 color: #14213D;
@@ -108,11 +143,11 @@ background-size: cover;*/
 /* width: 100%; */
 }
 
-#logo {
+#logo  {
 color: #FCA311;
 font-family: 'Amatic SC', cursive;
 font-size: 40px;
-padding: 0px 50px;
+padding: 20px 50px;
 }
 
 .cover-content {
@@ -122,41 +157,52 @@ text-align: center;
 */}
 
 
-.footer {
+footer {
 padding-top: 20px;
 text-align: center;
+height: 100px;
 }
 
 
 /* Media Queries */
 /* mobile hamburger */
-@media screen and (max-width: 600px) {
-  header{
-    padding-top: 20px;
+@media screen and (max-width: 600px){
+  header.desktop{
+  display: none;
+  } 
+
+}
+
+@media screen and (min-width: 601px){
+  header.mobile{
+  display: none;
+  } 
+
+  header.desktop a{
+    color: #14213D;
+    display: inline-block;
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 16px 20px;
+    text-transform: uppercase;
   }
 
-  .topnav a {
-    display: none;
+  header.desktop a:hover{
+    color: #FCA311;
+
   }
-  .topnav a.icon {
-    float: none;
+}
+
+@media screen and (max-height: 450px) {
+  header.mobile{
     display: block;
-    position: absolute;
-    right: 0;
-    top: 15px;
   }
 
-  .topnav.responsive  {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
   }
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 15px;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: center;
-  }
-
 }

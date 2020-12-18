@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <title></title>
     
     <link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -13,17 +13,27 @@
 
 <body>
   <div class=wrapper>
-    <header>
+    <header class="desktop">
+      <a href="index.html">Home</a>
+      <a href="#">Games</a>
       <a href="#" id="logo">Gingi's Games</a>
-        <nav class="topnav" id="myTopnav">
+      <a href="#">About us</a>
+      <a href="#">Contact us</a>
+    </header>
+    <header class="mobile">
+      <a href="#" id="logo">Gingi's Games</a>
+      <a href="javascript:void(0);" class="icon gingi" onclick="openNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <nav class="overlay" id="topnav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
           <a href="index.html">Home</a>
           <a href="#">Games</a>
           <a href="#">About us</a>
           <a href="#">Contact us</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-      </nav>
+        </div>
+    </nav>
     </header>
     <div class="main">
         <div id="cover">
@@ -34,18 +44,16 @@
         </div>
     </div>
   </div>
-    
   <footer><span>All Rights Reserved to Gingi.ga &copy; 2019</span></footer>
 </body>
 
 <script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
+  function openNav() {
+  document.getElementById("mobileNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mobileNav").style.width = "0%";
+}
   </script>
 </html>
