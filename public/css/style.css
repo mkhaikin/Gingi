@@ -5,6 +5,53 @@
     /*border: 1px solid black;*/
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  padding-top: 40px;
+  color: #333;
+  font-family: 'Amatic SC', cursive;
+  font-size: 10vh;
+  line-height: 100px;  
+  text-align: center;
+}
+
+h2 {
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  font-weight: 300;
+  text-align: center;
+}
+
+h3 {
+  color: #333;
+  font-family: 'Abel', sans-serif;
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5% 0;
+}
+
+h4 {
+  color: #FCA311;
+  font-family: 'Abel', sans-serif;
+  font-size: 24px;
+  margin: 0px 0px 50px 0px;
+}
+
+p {
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+
 header nav.navigation {
   background-color: rgba(255, 255, 255, 0.9);
   overflow-y: auto;
@@ -33,6 +80,8 @@ li {
 
 li a {
   text-decoration: none;
+ border: 1px solid white;
+
 }
 
 li a:visited, a:link {
@@ -53,8 +102,6 @@ li a:hover {
   height: 100%;
   /*position: relative;*/
   width: 100%;
-  
-}
 
 #logo {
   color: #FCA311;
@@ -70,6 +117,7 @@ li a:hover {
   width: 70%;
 /*  padding-top: 100px;
 */}
+
 
 h1 {
   padding-top: 60px;
@@ -124,11 +172,31 @@ p {
 
 .column img {
   width: 80%;
+=======
+.row {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.column {
+  width: 300px;
+  text-align: center;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+
+}
+
+.column img {
+
+
 }
 
 .column h3 {
   background-color: rgba(255, 255, 255, 0.6);
+
   padding: 25%;
+
 }
 
 input[type=text], select {
@@ -156,6 +224,25 @@ input[type=text], select {
   cursor: pointer;
 }
 
+
+.games {
+  margin: 0 auto;
+  padding:5px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+      justify-content: space-between;
+}
+
+.games > div {
+  background-color: #f1f1f1;
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+  
+  font-size: 30px;
+}
+
 a.more-btn {
   border: none;
   padding: 15px 32px;
@@ -167,6 +254,8 @@ a.more-btn {
   cursor: pointer;
   color: black; 
   border: 2px solid #4CAF50;
+  border-radius: 25px;
+
 }
 
 a.more-btn:hover {
@@ -180,6 +269,8 @@ a.more-btn:hover {
   cursor: pointer;
   color: black; 
   border: 2px solid #4CAF50;
+  border-radius: 25px;
+
 }
 
 .footer {
@@ -189,6 +280,9 @@ a.more-btn:hover {
   left: 0;
   bottom: 0;
 }
+
+  }
+
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -202,5 +296,10 @@ a.more-btn:hover {
     padding: 5% 0;
     padding-left: 25%;
     padding-right: 25%;
+  }
+  
+  .footer {
+  padding-top: 20px;
+  text-align: center;
   }
 }
