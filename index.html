@@ -70,7 +70,7 @@ function closeNav() {
 
 document.getElementById('getMessage').onclick = function(){
       const req = new XMLHttpRequest();
-      req.open("GET",'http://mkhaikin.github.io/gingi/data.json ', true);
+      req.open("GET",'https://mkhaikin.github.io/gingi/data.json ', true);
       req.send();
       req.onload=function(){
         const json = JSON.parse(req.responseText);
